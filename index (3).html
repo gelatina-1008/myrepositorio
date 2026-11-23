@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - María García</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #06b6d4;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --text-light: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .profile-header h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+
+        .profile-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 0.25rem;
+        }
+
+        .contact-info ul, .skills-list ul, .interests-list ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .contact-info li, .skills-list li, .interests-list li {
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin: 0.2rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .main-section h2 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.3rem;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .item-subtitle {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .item-desc {
+            font-size: 0.95rem;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- Columna Lateral -->
+        <aside class="sidebar">
+            <div class="profile-header">
+                <h1>María</h1>
+                <p>Estudiante & Apasionada de la Tecnología</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="section-title">Contacto</div>
+                <ul>
+                    <li>📍 España</li>
+                    <li>📧 maria.tech.dev@email.com</li>
+                    <li>📱 +34 600 123 456</li>
+                </ul>
+            </div>
+
+            <div class="skills-list">
+                <div class="section-title">Habilidades</div>
+                <ul>
+                    <li>💻 Informática Básica y Ofimática</li>
+                    <li>🌐 Fundamentos de Programación</li>
+                    <li>⚙️ Resolución de Problemas</li>
+                    <li>🤝 Trabajo en Equipo</li>
+                </ul>
+            </div>
+
+            <div class="interests-list">
+                <div class="section-title">Intereses</div>
+                <div>
+                    <span class="badge">Fútbol</span>
+                    <span class="badge">Deportes</span>
+                    <span class="badge">Tecnología</span>
+                    <span class="badge">Gastronomía</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="main-content">
+            <section class="main-section">
+                <h2>Perfil Profesional</h2>
+                <p class="item-desc">
+                    Estudiante entusiasta y dinámica residente en España, con un fuerte interés por la informática, la tecnología y el deporte. Destaco por mi gran capacidad de aprendizaje rápido, curiosidad por las nuevas herramientas digitales y habilidades de colaboración fomentadas a través de la práctica deportiva.
+                </p>
+            </section>
+
+            <section class="main-section">
+                <h2>Educación</h2>
+                <div class="education-item">
+                    <div class="item-title">Educación Secundaria Obligatoria / Bachillerato</div>
+                    <div class="item-subtitle">Instituto de Educación Secundaria • España (2022 - Actualidad)</div>
+                    <div class="item-desc">Formación académica enfocada en ciencias y tecnología, destacando en asignaturas del ámbito digital y matemático.</div>
+                </div>
+            </section>
+
+            <section class="main-section">
+                <h2>Proyectos y Experiencia</h2>
+                <div class="experience-item">
+                    <div class="item-title">Proyectos Escolares de Informática</div>
+                    <div class="item-subtitle">Prácticas y Talleres Académicos</div>
+                    <div class="item-desc">Desarrollo de pequeñas páginas web estáticas con HTML y CSS, además de investigación sobre nuevas tendencias tecnológicas y uso avanzado de herramientas ofimáticas.</div>
+                </div>
+                <div class="experience-item">
+                    <div class="item-title">Actividades Deportivas en Equipo</div>
+                    <div class="item-subtitle">Competiciones Locales de Fútbol</div>
+                    <div class="item-desc">Participación activa en equipos de fútbol locales, fomentando valores como el compañerismo, la disciplina, la resiliencia y el liderazgo positivo.
+ 
+<h2><div class="item-subtitle">Con este trabajo he descubierto font-family: sirve para definir la <strong>tipografía</strong> o <strong>fuente de texto</strong>
+</div></h2>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
